@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "boron",
+  "version": "${version}",
+  "name": "BORON",
+  "description": "An independent client-side rendering and performance optimization mod for Minecraft Java Edition.",
+  "authors": ["Boron Team"],
+  "contact": {
+    "sources": "https://github.com/cornerfood565-ctrl/Boron"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.boron.optimizer.BoronClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -16,10 +16,11 @@ public final class BoronConfig {
     private static final Path CONFIG_PATH =
             FabricLoader.getInstance().getConfigDir().resolve("boron.json");
 
-    private static boolean entityCulling = true;
-    private static boolean blockEntityCulling = true;
-    private static boolean particleOptimization = true;
-    private static boolean chunkBuildScheduling = true;
+    // Keep unfinished optimizations disabled until their implementations are tested.
+    private static boolean entityCulling = false;
+    private static boolean blockEntityCulling = false;
+    private static boolean particleOptimization = false;
+    private static boolean chunkBuildScheduling = false;
 
     private BoronConfig() {
     }
